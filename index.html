@@ -7,6 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -23,9 +25,11 @@
   <![endif]-->
 	<header>
 		<div class="content-wrapper">
-			<a href="#">
-				<img src="img/logo.png" alt="nexus logo">
-			</a>
+			<figure>
+				<a href="#">
+					<img src="img/logo.png" alt="nexus logo">
+				</a>
+			</figure>
 			<div class="header-divider"></div>
 			<nav>
 				<ul>
@@ -41,24 +45,25 @@
 		<section class="hero-area">
 			<div class="content-wrapper">
 				<h1>The ultimate trip awaits you.</h1>
-				<img src="#" alt="hero image">
 			</div>
 		</section>
 
 		<aside>
-			<div class="content-wrapper"><!--Newsletter signup start-->
-				<div class="form-description">
-					<h3>Want to join the next voyage?</h3>
-					<p>
-						Find out when we are holding our next voyage and how you can sign up.
-					<p>
-				</div>
-				<div class="form">
-					<h3>Find out more</h3>
-					<input type="text" name="name" value="email address">
-					<input type="button" value="Download Itinerary">
-				</div>
-		  </div><!--Newsleter signup end-->
+			<section class="newsletter">
+				<div class="content-wrapper"><!--Newsletter signup start-->
+					<div class="form-description">
+						<h3>Want to join the next voyage?</h3>
+						<p>
+							Find out when we are holding our next voyage and how you can sign up.
+						<p>
+					</div>
+					<div class="form">
+						<h3>Find out more</h3>
+						<input type="text" name="name" value="email address">
+						<input type="button" value="Download Itinerary">
+					</div>
+			  </div>
+			</section><!--Newsleter signup end-->
 
 			<section class="features">
 				<div class="content-wrapper">
@@ -114,7 +119,9 @@
 				<div class="content-wrapper"><!--Previous voyage start-->
 					<h2>Sights you'll never see in your wildest dreams, until now.</h2>
 					<article>
-						<img src="#" alt="previous voyage review">
+						<figure>
+							<img src="img/review.jpg" alt="previous voyage review">
+						</figure>
 						<div class="previous-voyage">
 							<h3>Helios 201 October 2019</h3>
 							<p>
@@ -132,7 +139,7 @@
 	<footer>
 		<div class="content-wrapper">
 			<div class="footer-content">
-				<address class="contact">
+				<address class="footer-contact"><!--prev contact only-->
 					<h4>Contact</h4>
 					<p>
 						<a href="tel:555-555-5555">555-555-5555</a>
