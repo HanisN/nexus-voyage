@@ -97,7 +97,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General Styles */
+
+/*============================= General Styles ============================= */
 html {
 	font-size: 16px;
 }
@@ -121,21 +122,25 @@ h1 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	font-size: 2.25em;
+	line-height: 1.2;
 }
 
 h2 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-	font-size: 1.7em;
+	font-size: 1.875em;
+	margin: 0;
 }
 
 h3, h4 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 1.125em;
+	margin: 20px 0;
 }
 
 p {
+	font-size: 0.875em;
 	line-height: 1.15em;
 }
 
@@ -159,7 +164,7 @@ address {
 .newsletter, .features, .reviews {
 		width: 100%;
 	}
-/*==========MAIN, HEADER, FOOTER===========*/
+/*========================== Base Header - Footer ========================== */
 header,
 footer {
 	display: flex;
@@ -205,7 +210,7 @@ header nav {
 	width: 60%;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.3em;
+	font-size: 1.125em;
 }
 
 header nav ul {
@@ -215,6 +220,10 @@ header nav ul {
 	width: 100%;
 	padding: 0;
 	margin:  0;
+}
+
+header nav ul li {
+	font-size: 1.125em;
 }
 
 footer {
@@ -250,10 +259,9 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-	margin: 0 20px;
 }
 
-footer p i {
+footer .social-icons p i {
 	font-size: 1.3125em;
 }
 
@@ -261,9 +269,12 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/*------------------------------MOBILE STYLES--------------------------------*/
 
-/*==========HERO===========*/
+/* ==========================================================================
+   													DEFAULT/MOBILE STYLES
+   ========================================================================== */
+
+/*=================================== Hero ==================================*/
 .hero-area {
 	display: flex;
 	justify-content: center;
@@ -274,7 +285,7 @@ footer .copyright {
 	min-height: 400px;
 }
 
-/*==========ASIDE===========*/
+/*================================== Aside ==================================*/
 aside {
 	display: flex;
 	justify-content: center;
@@ -282,6 +293,7 @@ aside {
 	flex-flow: column wrap;
 }
 
+/*---------------- Newsletter -------------------*/
 .newsletter {
 	background-color: #2B4CB4;
 	display: flex;
@@ -315,6 +327,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
+/*---------------- Features ---------------- */
 .features {
 	display: flex;
 	justify-content: center;
@@ -325,6 +338,11 @@ input[type=button] {
 
 .features h2 {
   margin-bottom: 60px;
+}
+
+.features article {
+	width: 63%;
+	padding: 30px 0;
 }
 
 .features .features-items {
@@ -340,15 +358,11 @@ input[type=button] {
 	margin-bottom: 40px;
 }
 
-.features article {
-	width: 63%;
-	padding: 30px 0;
-}
-
 .features p {
 	margin: 0;
 }
 
+/* ---------------- Reviews ---------------- */
 .reviews {
 	display: flex;
 	justify-content: center;
@@ -359,6 +373,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+	line-height: 1;
 }
 
 .reviews h3 {
@@ -366,7 +381,8 @@ input[type=button] {
   margin: 20px 0;
 }
 
-/*==========ABOUT PAGE===========*/
+
+/*=============================*** ABOUT PAGE ***============================*/
 .mission {
 	display: flex;
 	justify-content: center;
@@ -375,6 +391,7 @@ input[type=button] {
 	background-color: #2B4CB4;
 }
 
+/* ---------------- Map ---------------- */
 .map figure {
     width: 100%;
     height: 0;
@@ -391,6 +408,7 @@ input[type=button] {
     left: 0;
 }
 
+/* ---------------- Contact ---------------- */
 .contact {
 	display: flex;
 	justify-content: center;
@@ -402,7 +420,9 @@ input[type=button] {
 .contact-content p {
   margin: 0;
 }
-/*==========FAQ PAGE===========*/
+
+
+/*==============================*** FAQ PAGE ***=============================*/
 .faq {
 	display: flex;
 	justify-content: center;
@@ -411,7 +431,12 @@ input[type=button] {
 	background-color: #2B4CB4;
 }
 
+.faq h2 {
+	margin-bottom: 40px;
+	line-height: 1;
+}
 
+/* ---------------- FAQ Content ---------------- */
 .faq .content-wrapper {
  		display: flex;
  		justify-content: flex-start;
@@ -423,6 +448,10 @@ input[type=button] {
 .faq-content {
   margin-bottom: 40px;
 	line-height: 1;
+}
+
+.faq-content h4 {
+	line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -514,28 +543,47 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
+
+
+/* ==========================================================================
+	   																TABLET STYLES
+========================================================================== */
+
 @media only screen and (min-width: 768px) {
-	/*Tablet styles here*/
-	/* General styles */
+
+/*============================= General Styles ============================= */
 	.content-wrapper {
   	max-width: 640px;
     margin: 50px 0;
     }
 
-    /* Header */
+		h2 {
+		font-size: 2.25em;
+		line-height: 1.333;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1.25;
+}
+/*============================= Header, Footer ============================= */
   header {
 		justify-content: space-around;
 		padding: 33px 0;
     }
 
+	header .content-wrapper {
+		width: 100%;
+		justify-content: space-between;
+			}
+
 	header figure {
 		width: 18%;
 		}
 
-  header .content-wrapper {
-    width: 100%;
-		justify-content: space-between;
-    }
+	.header-divider {
+		display: none;
+			}
 
   header nav {
     width: 20%;
@@ -546,11 +594,40 @@ input[type=button] {
  		justify-content: space-between;
     }
 
-  .header-divider {
-    display: none;
-    }
+	footer .content-wrapper {
+			width: 65%;
+			margin: 100px 0;
+			}
 
-  /* Hero Area */
+	.footer-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			}
+
+	footer .contact {
+			margin-bottom: 0;
+				}
+
+	footer h4 {
+		font-size: 1.5em;
+		margin-bottom: 40px;
+	}
+
+	footer p {
+		line-height: 1.285;
+	}
+
+	footer .social-icons {
+			width: 12.5em;
+			justify-content: space-between;
+			}
+
+	footer .copyright {
+		/*width: 100%;*/
+			}
+
+/*=================================== Hero ==================================*/
 	.hero-area {
 		min-height: 600px;
 	}
@@ -560,7 +637,8 @@ input[type=button] {
 		line-height: 1;
 		margin: 0;
 	}
-  /* Aside */
+
+/*================================== Aside ==================================*/
   aside .content-wrapper {
     margin: 45px 0;
 		display: flex;
@@ -574,7 +652,10 @@ input[type=button] {
     margin: 0;
     }
 
-  /* Features */
+/*---------------- Features ---------------- */
+.features h2 {
+	margin-bottom: 20px;
+}
   .features article {
  			display: flex;
 			justify-content: center;
@@ -584,10 +665,10 @@ input[type=button] {
     }
 
   .features .features-item-description {
-    width: 50%;
+    width: 60%;
     }
 
-    /* Reviews */
+/*---------------- Reviews ---------------- */
   .reviews article {
  		display: flex;
 		justify-content: space-between;
@@ -605,33 +686,10 @@ input[type=button] {
 	.reviews h3 {
 		width: 75%;
 		margin: 0;
-
 		}
 
-  /* Footer */
-  footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
-    }
-
-  .footer-content {
- 		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
-    }
-
-  footer .contact {
-    margin-bottom: 0;
-    }
-
-  footer .copyright {
-  /*width: 100%;*/
-    }
-
-/* ==========================================================================
-   About Page
-========================================================================== */
-   .mission-content {
+/*=========================*** TABLET ABOUT PAGE ***=========================*/
+	 .mission-content {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -664,10 +722,9 @@ input[type=button] {
 	font-size: 1.5em;
 }
 
-/* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-    .faq .content-wrapper {
+/*==========================*** TABLET FAQ PAGE ***==========================*/
+
+	  .faq .content-wrapper {
         justify-content: space-between;
 				align-items: baseline;
     }
@@ -679,40 +736,72 @@ input[type=button] {
     .faq h2 {
         width: 100%;
     }
-} /*-- Tablet media query end --*/
+
+		.faq h4,
+		.faq p {
+			font-size: 0.875em;
+			line-height: 1.125;
+		}
+}
+
+/* ==========================================================================
+	   																DESKTOP STYLES
+========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-	/*Desktop styles here */
+
+/*============================= General Styles ============================= */
     .content-wrapper {
     	max-width: 960px;
     }
 
+		h2 {
+			font-size: 2.25em;
+		}
+
+		h3,
+		h4 {
+			font-size: 1.875em;
+		}
+
+		p {
+			font-size: 1.125em;
+			line-height: 1.333;
+		}
+/*============================= Header, Footer ============================= */
 		header figure {
 			width: 20%;
 			}
 
-			header nav {
+		header nav {
 				width: 20%;
 				font-size: 1.3em;
 				}
 
-     /* Hero */
+		footer h4 {
+			    font-size: 1.875em;
+			  }
+
+/*=================================== Hero ================================= */
     .hero-area h1 {
       width: 80%;
 			font-size: 3.75em;
     }
 
-    /* Aside */
+/*================================== Aside ================================= */
     aside .content-wrapper {
       justify-content: space-between;
     }
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-      width: 30%;
+      width: 46%;
     }
 
-    /* Features */
+.form-description p {
+	font-size: 1.125em;
+}
+  /*---------------- Features ---------------- */
     .features h2 {
       width: 90%;
     }
@@ -721,14 +810,15 @@ input[type=button] {
       flex-basis: 33%;
     }
 
-    /* Reviews */
+/*---------------- Reviews ---------------- */
+.reviews h2 {
+	padding-bottom: 50px;
+}
     .reviews article .previous-voyage {
       width: 42%;
     }
 
-/* ==========================================================================
-   About Page
-   ========================================================================== */
+/*========================*** DESKTOP ABOUT PAGE ***=========================*/
     .mission h2,
     .contact .content-wrapper h2 {
         width: 95%;
@@ -739,28 +829,28 @@ input[type=button] {
 		    padding-bottom: 50%;
 		}
 
-    .contact .content-wrapper h2 {
-        margin-bottom: 20px;
-    }
-
 		.contact-content {
 			align-items: flex-start;
 		}
 
-/* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-    .faq h2 {
+		.contact-content h4 {
+			font-size: 1.875em;
+		}
+
+/*==========================*** DESKTOP FAQ PAGE ***=========================*/
+	  .faq h2 {
         width: 100%;
 				font-size: 3em;
-				line-height: 1;
     }
 
-    .faq-content {
-        flex-basis: 48%;
-				flex-flow: row wrap;
-    }
+.faq h4,
+.faq p {
+	font-size: 1.125em;
+	line-height: 1;
+}
+
 } /*----Desktop media style ends*/
+
 
 /* ==========================================================================
    Print styles.
