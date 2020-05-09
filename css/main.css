@@ -153,8 +153,7 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 0;
-	padding: 15px 0;
+  margin: 40px 0;
 }
 
 .newsletter, .features, .reviews {
@@ -183,6 +182,7 @@ header .content-wrapper {
 }
 
 header figure {
+	max-width: 250px;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -204,6 +204,8 @@ header nav {
 	flex-flow: row wrap;
 	width: 60%;
 	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.3em;
 }
 
 header nav ul {
@@ -241,9 +243,18 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+	background-color: #2B4CB4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+	margin: 0 20px;
+}
+
+footer p i {
+	font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -319,9 +330,14 @@ input[type=button] {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-flow: row wrap;
   text-align: center;
+}
+
+.features i {
+	font-size: 3.75em;
+	margin-bottom: 40px;
 }
 
 .features article {
@@ -357,7 +373,6 @@ input[type=button] {
 	align-items: center;
 	flex-flow: row wrap;
 	background-color: #2B4CB4;
-	padding: 20px 0 40px 0;
 }
 
 .map figure {
@@ -382,7 +397,6 @@ input[type=button] {
 	align-items: center;
 	flex-flow: row wrap;
 	background-color: #23409a;
-	padding: 20px 0 45px 0;
 }
 
 .contact-content p {
@@ -395,18 +409,20 @@ input[type=button] {
 	align-items: center;
 	flex-flow: row wrap;
 	background-color: #2B4CB4;
-	padding: 20px 0 10px 0;
 }
+
 
 .faq .content-wrapper {
  		display: flex;
- 		justify-content: center;
+ 		justify-content: flex-start;
  		align-items: center;
  		flex-flow: row wrap;
+		margin: 50px 0 0 0;
 }
 
 .faq-content {
   margin-bottom: 40px;
+	line-height: 1;
 }
 
 /* ==========================================================================
@@ -503,7 +519,7 @@ input[type=button] {
 	/* General styles */
 	.content-wrapper {
   	max-width: 640px;
-    margin: 100px 0;
+    margin: 50px 0;
     }
 
     /* Header */
@@ -513,7 +529,7 @@ input[type=button] {
     }
 
 	header figure {
-		width: 24%;
+		width: 18%;
 		}
 
   header .content-wrapper {
@@ -523,6 +539,7 @@ input[type=button] {
 
   header nav {
     width: 20%;
+		font-size: 1.1em;
     }
 
   header nav ul {
@@ -643,6 +660,10 @@ input[type=button] {
         align-items: flex-start;
 }
 
+.contact-content h4 {
+	font-size: 1.5em;
+}
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -667,12 +688,18 @@ input[type=button] {
     }
 
 		header figure {
-			width: 15%;
+			width: 20%;
 			}
+
+			header nav {
+				width: 20%;
+				font-size: 1.3em;
+				}
 
      /* Hero */
     .hero-area h1 {
-      width: 60%;
+      width: 80%;
+			font-size: 3.75em;
     }
 
     /* Aside */
@@ -705,6 +732,7 @@ input[type=button] {
     .mission h2,
     .contact .content-wrapper h2 {
         width: 95%;
+				font-size: 3em;
     }
 
 		.map figure {
@@ -724,6 +752,8 @@ input[type=button] {
    ========================================================================== */
     .faq h2 {
         width: 100%;
+				font-size: 3em;
+				line-height: 1;
     }
 
     .faq-content {
