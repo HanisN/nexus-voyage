@@ -86,7 +86,6 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -98,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*============================= General Styles ============================= */
+/* === General Styles === */
 html {
 	font-size: 16px;
 }
@@ -162,9 +161,10 @@ address {
 }
 
 .newsletter, .features, .reviews {
-		width: 100%;
-	}
-/*========================== Base Header - Footer ========================== */
+	width: 100%;
+}
+
+/* === Header - Footer === */
 header,
 footer {
 	display: flex;
@@ -269,23 +269,22 @@ footer .copyright {
   margin: 20px 0;
 }
 
-
 /* ==========================================================================
    													DEFAULT/MOBILE STYLES
    ========================================================================== */
 
-/*=================================== Hero ==================================*/
+/* === Hero === */
 .hero-area {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	flex-flow: row wrap;
-	background: url('../img/hero.jpg') top no-repeat #333; /*Image by Reimund Bertrams from Pixabay */
+	background: url('../img/hero.jpg') top no-repeat #333;
 	background-size: cover;
 	min-height: 400px;
 }
 
-/*================================== Aside ==================================*/
+/* === Aside === */
 aside {
 	display: flex;
 	justify-content: center;
@@ -293,7 +292,7 @@ aside {
 	flex-flow: column wrap;
 }
 
-/*---------------- Newsletter -------------------*/
+/* = Newsletter = */
 .newsletter {
 	background-color: #2B4CB4;
 	display: flex;
@@ -327,7 +326,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/*---------------- Features ---------------- */
+/* = Features = */
 .features {
 	display: flex;
 	justify-content: center;
@@ -362,7 +361,7 @@ input[type=button] {
 	margin: 0;
 }
 
-/* ---------------- Reviews ---------------- */
+/* = Reviews = */
 .reviews {
 	display: flex;
 	justify-content: center;
@@ -381,8 +380,7 @@ input[type=button] {
   margin: 20px 0;
 }
 
-
-/*=============================*** ABOUT PAGE ***============================*/
+/* ====*** ABOUT PAGE ***==== */
 .mission {
 	display: flex;
 	justify-content: center;
@@ -391,24 +389,24 @@ input[type=button] {
 	background-color: #2B4CB4;
 }
 
-/* ---------------- Map ---------------- */
+/* = Map = */
 .map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 80%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%;
+  overflow: hidden;
+  position: relative;
 }
 
 .map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* ---------------- Contact ---------------- */
+/* = Contact = */
 .contact {
 	display: flex;
 	justify-content: center;
@@ -421,8 +419,7 @@ input[type=button] {
   margin: 0;
 }
 
-
-/*==============================*** FAQ PAGE ***=============================*/
+/* ====*** FAQ PAGE ***==== */
 .faq {
 	display: flex;
 	justify-content: center;
@@ -436,13 +433,13 @@ input[type=button] {
 	line-height: 1;
 }
 
-/* ---------------- FAQ Content ---------------- */
+/* = FAQ Content = */
 .faq .content-wrapper {
- 		display: flex;
- 		justify-content: flex-start;
- 		align-items: center;
- 		flex-flow: row wrap;
-		margin: 50px 0 0 0;
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ 	flex-flow: row wrap;
+	margin: 50px 0 0 0;
 }
 
 .faq-content {
@@ -551,63 +548,64 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
 
-/*============================= General Styles ============================= */
+/* === General Styles === */
 	.content-wrapper {
   	max-width: 640px;
     margin: 50px 0;
-    }
+  }
 
-		h2 {
+	h2 {
 		font-size: 2.25em;
 		line-height: 1.333;
-}
+	}
 
-h3 {
-	font-size: 1.5em;
-	line-height: 1.25;
-}
-/*============================= Header, Footer ============================= */
+	h3 {
+		font-size: 1.5em;
+		line-height: 1.25;
+	}
+
+/* === Header, Footer === */
   header {
 		justify-content: space-around;
 		padding: 33px 0;
-    }
+  }
 
 	header .content-wrapper {
 		width: 100%;
 		justify-content: space-between;
-			}
+	}
 
 	header figure {
 		width: 18%;
-		}
+	}
 
 	.header-divider {
 		display: none;
-			}
+	}
 
   header nav {
-    width: 20%;
+  	width: 20%;
 		font-size: 1.1em;
-    }
+  }
 
   header nav ul {
  		justify-content: space-between;
-    }
+  }
 
 	footer .content-wrapper {
-			width: 65%;
-			margin: 100px 0;
-			}
+		width: 65%;
+		margin: 100px 0;
+	}
 
 	.footer-content {
-			display: flex;
-			justify-content: space-between;
-			align-items: baseline;
-			}
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
 
 	footer .contact {
-			margin-bottom: 0;
-				}
+		margin-bottom: 0;
+	}
 
 	footer h4 {
 		font-size: 1.5em;
@@ -619,15 +617,15 @@ h3 {
 	}
 
 	footer .social-icons {
-			width: 12.5em;
-			justify-content: space-between;
-			}
+		width: 12.5em;
+		justify-content: space-between;
+	}
 
 	footer .copyright {
 		/*width: 100%;*/
 			}
 
-/*=================================== Hero ==================================*/
+/* === Hero === */
 	.hero-area {
 		min-height: 600px;
 	}
@@ -638,110 +636,111 @@ h3 {
 		margin: 0;
 	}
 
-/*================================== Aside ==================================*/
+/* === Aside === */
   aside .content-wrapper {
     margin: 45px 0;
 		display: flex;
 		justify-content: space-between;
 		flex-flow: row wrap;
-    }
+  }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 45%;
     margin: 0;
-    }
+  }
 
-/*---------------- Features ---------------- */
-.features h2 {
-	margin-bottom: 20px;
-}
+/* = Features = */
+	.features h2 {
+		margin-bottom: 20px;
+	}
+
   .features article {
- 			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column wrap;
-			flex-basis: 50%;
-    }
+ 		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column wrap;
+		flex-basis: 50%;
+  }
 
   .features .features-item-description {
     width: 60%;
-    }
+  }
 
-/*---------------- Reviews ---------------- */
+/* = Reviews = */
   .reviews article {
  		display: flex;
 		justify-content: space-between;
-    }
+  }
 
 	.reviews article h2 {
-			width: 85%;
-		}
+		width: 85%;
+	}
 
   .reviews article .previous-voyage,
 	.reviews article figure {
     width: 49%;
-    }
+  }
 
 	.reviews h3 {
 		width: 75%;
 		margin: 0;
-		}
+	}
 
-/*=========================*** TABLET ABOUT PAGE ***=========================*/
-	 .mission-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-				padding-top: 20px;
-    }
+/* ====*** TABLET ABOUT PAGE ***==== */
+	.mission-content {
+  	display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+		padding-top: 20px;
+  }
 
-    .mission-content p {
-        width: 45%;
-    }
+  .mission-content p {
+    width: 45%;
+  }
 
-		.map figure {
-		    padding-bottom: 56%;
-		}
+	.map figure {
+		padding-bottom: 56%;
+	}
 
-		.content-wrapper {
-			width: 90%;
-		}
+	.content-wrapper {
+		width: 90%;
+	}
 
-    .contact .content-wrapper h2 {
-        width: 80%;
-    }
+  .contact .content-wrapper h2 {
+    width: 80%;
+  }
 
-    .contact-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-}
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+	}
 
-.contact-content h4 {
-	font-size: 1.5em;
-}
+	.contact-content h4 {
+		font-size: 1.5em;
+	}
 
-/*==========================*** TABLET FAQ PAGE ***==========================*/
+/* ====*** TABLET FAQ PAGE ***==== */
 
-	  .faq .content-wrapper {
-        justify-content: space-between;
-				align-items: baseline;
-    }
+	.faq .content-wrapper {
+    justify-content: space-between;
+		align-items: baseline;
+  }
 
-    .faq-content {
-        flex-basis: 40%;
-    }
+  .faq-content {
+    flex-basis: 40%;
+  }
 
-    .faq h2 {
-        width: 100%;
-    }
+  .faq h2 {
+    width: 100%;
+  }
 
-		.faq h4,
-		.faq p {
-			font-size: 0.875em;
-			line-height: 1.125;
-		}
+	.faq h4,
+	.faq p {
+		font-size: 0.875em;
+		line-height: 1.125;
+	}
 }
 
 /* ==========================================================================
@@ -750,107 +749,108 @@ h3 {
 
 @media only screen and (min-width: 1200px) {
 
-/*============================= General Styles ============================= */
-    .content-wrapper {
-    	max-width: 960px;
-    }
+/* === General Styles === */
+	.content-wrapper {
+    max-width: 960px;
+  }
 
-		h2 {
-			font-size: 2.25em;
-		}
+	h2 {
+		font-size: 2.25em;
+	}
 
-		h3,
-		h4 {
-			font-size: 1.875em;
-		}
+	h3,
+	h4 {
+		font-size: 1.875em;
+	}
 
-		p {
-			font-size: 1.125em;
-			line-height: 1.333;
-		}
-/*============================= Header, Footer ============================= */
-		header figure {
-			width: 20%;
-			}
+	p {
+		font-size: 1.125em;
+		line-height: 1.333;
+	}
 
-		header nav {
-				width: 20%;
-				font-size: 1.3em;
-				}
+/* === Header, Footer === */
+	header figure {
+		width: 20%;
+	}
 
-		footer h4 {
-			    font-size: 1.875em;
-			  }
+	header nav {
+		width: 20%;
+		font-size: 1.3em;
+	}
 
-/*=================================== Hero ================================= */
-    .hero-area h1 {
-      width: 80%;
-			font-size: 3.75em;
-    }
+	footer h4 {
+		font-size: 1.875em;
+	}
 
-/*================================== Aside ================================= */
-    aside .content-wrapper {
-      justify-content: space-between;
-    }
+/* === Hero === */
+  .hero-area h1 {
+    width: 80%;
+		font-size: 3.75em;
+  }
 
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-      width: 46%;
-    }
+/* === Aside === */
+	aside .content-wrapper {
+    justify-content: space-between;
+  }
 
-.form-description p {
-	font-size: 1.125em;
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 46%;
+  }
+
+	.form-description p {
+		font-size: 1.125em;
+	}
+
+  /* = Features = */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+/* = Reviews = */
+	.reviews h2 {
+		padding-bottom: 50px;
+	}
+
+  .reviews article .previous-voyage {
+    width: 42%;
+  }
+
+/* ====*** DESKTOP ABOUT PAGE ***==== */
+	.mission h2,
+  .contact .content-wrapper h2 {
+    width: 95%;
+		font-size: 3em;
+  }
+
+	.map figure {
+		padding-bottom: 50%;
+	}
+
+	.contact-content {
+		align-items: flex-start;
+	}
+
+	.contact-content h4 {
+		font-size: 1.875em;
+	}
+
+/* ====*** DESKTOP FAQ PAGE ***==== */
+	.faq h2 {
+  	width: 100%;
+		font-size: 3em;
+  }
+
+	.faq h4,
+	.faq p {
+		font-size: 1.125em;
+		line-height: 1.3;
+	}
 }
-  /*---------------- Features ---------------- */
-    .features h2 {
-      width: 90%;
-    }
-
-    .features article {
-      flex-basis: 33%;
-    }
-
-/*---------------- Reviews ---------------- */
-.reviews h2 {
-	padding-bottom: 50px;
-}
-    .reviews article .previous-voyage {
-      width: 42%;
-    }
-
-/*========================*** DESKTOP ABOUT PAGE ***=========================*/
-    .mission h2,
-    .contact .content-wrapper h2 {
-        width: 95%;
-				font-size: 3em;
-    }
-
-		.map figure {
-		    padding-bottom: 50%;
-		}
-
-		.contact-content {
-			align-items: flex-start;
-		}
-
-		.contact-content h4 {
-			font-size: 1.875em;
-		}
-
-/*==========================*** DESKTOP FAQ PAGE ***=========================*/
-	  .faq h2 {
-        width: 100%;
-				font-size: 3em;
-    }
-
-.faq h4,
-.faq p {
-	font-size: 1.125em;
-	line-height: 1;
-}
-
-} /*----Desktop media style ends*/
-
 
 /* ==========================================================================
    Print styles.
